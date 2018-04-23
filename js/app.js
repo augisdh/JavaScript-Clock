@@ -19,6 +19,7 @@ function setDate(){
     const hoursDegrees = ((hours / 12) * 360) + 90;
     hoursHand.style.transform = `rotate(${hoursDegrees}deg)`;
 
+    // Insta transition when arrow is on 12h     
     if(secondsDegrees === 90){
         secondsHand.style.transition = "none";
     } else {
